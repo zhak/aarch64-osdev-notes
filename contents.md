@@ -7,12 +7,15 @@ layout: default
   <h1>Contents</h1>
 </header>
 
-<ul style="list-style-type: none; padding-inline-start: 0;">
-  {% for page in site.pages %}
-    {% if page.layout == 'note' %}
-      <li>
-        <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
-      </li>
-    {% endif %}
+{% for collection in site.collections %}
+  {% if site[collection.label] != empty %}
+  <h2 class="collection-title">{{ collection.title }}</h2>
+  <hr class="collection-title">
+  <ul style="list-style-type: none; padding-inline-start: 0;">
+  {% for page in site[collection.label] %}
+    <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
   {% endfor %}
-</ul>
+  </ul>
+  {% endif %}
+{% endfor %}
+

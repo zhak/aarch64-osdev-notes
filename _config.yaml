@@ -1,3 +1,9 @@
 title: "AArch64 osdev notes"
 baseurl: /aarch64-osdev-notes
 updated: "2021-02-24"
+
+collections_dir: notes
+collections:
+  rockchip:
+    title: "Rockchip"
+    output: true
