@@ -1,5 +1,5 @@
 ---
-title: "contents"
+title: "Contents"
 layout: default
 ---
 
