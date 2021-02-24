@@ -1,5 +1,5 @@
 ---
-title: "ROCK Pi S Pinouts"
+title: "Pinouts"
 layout: note
 updated: "2021-02-25"
 ---

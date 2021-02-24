@@ -1,5 +1,5 @@
 ---
-title: "Rockchip RC4 algorithm"
+title: "RC4 algorithm"
 layout: note
 updated: "2021-02-24"
 ---

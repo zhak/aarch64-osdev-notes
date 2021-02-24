@@ -2,7 +2,18 @@
 <html lang="en">
 <head>
   <title>
-    {% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}
+    {% if page.title %}
+      {% if page.collection %}
+        {% for collection in site.collections %}
+          {% if collection.label == page.collection %}
+            {{ collection.title }} {{ page.title }} -
+          {% break %}
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        {{ page.title }} -
+      {% endif %}
+    {% endif %}{{ site.title }}
   </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

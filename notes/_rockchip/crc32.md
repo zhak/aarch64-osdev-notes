@@ -1,5 +1,5 @@
 ---
-title: "Rockchip CRC32 algorithm"
+title: "CRC32 algorithm"
 layout: note
 updated: "2021-02-24"
 ---
