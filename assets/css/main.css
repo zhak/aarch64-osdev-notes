@@ -1,6 +1,8 @@
 :root {
   --color-dark: #1c1d22;
   --color-light: #f0f0f0;
+  --color-mark-alert: #ff496c40;
+  --color-mark-important: #8bc94840;
 }
 
 html {
@@ -90,6 +92,23 @@ hr.collection-title {
   width: 33%;
 }
 
+strong > em {
+  background-color: var(--color-mark-important);
+  font-style: normal;
+  font-weight: normal;
+}
+
+strong > del {
+  background-color: var(--color-mark-alert);
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+td, th {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
 
 code {
   font-size: 0.75em;
@@ -117,5 +136,18 @@ div.language-python {
 
 div.language-python > div:before {
   content: "[ Python ]";
+  font-size: 0.9em;
+}
+
+div.language-fasmarm {
+  border-color: var(--color-dark);
+  border-style: dashed;
+  border-width: 1px;
+  display: block;
+  text-align: center;
+}
+
+div.language-fasmarm > div:before {
+  content: "[ Assembler ]";
   font-size: 0.9em;
 }

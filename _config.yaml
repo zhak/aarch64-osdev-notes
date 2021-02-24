@@ -7,3 +7,6 @@ collections:
   rockchip:
     title: "Rockchip"
     output: true
+  rockpis:
+    title: "ROCK Pi S"
+    output: true
