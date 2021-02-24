@@ -9,3 +9,7 @@ In these notes, I aggregate my knowledge about bare-metal programming and operat
 I write notes mostly for myself to better arrange in mind what I learn and be able to brush up on it when forgotten, but I'll be happy if you also find here something useful for yourselves.
 
 %author%
+
+<p style="text-align: center;">
+  <b>Go to <a href="{{ '/contents.html' | relative_url }}">contents</a>.</b>
+</p>
