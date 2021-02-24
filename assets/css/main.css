@@ -22,3 +22,22 @@ body {
   margin: auto;
   max-width: 50em;
 }
+
+body > header {
+  background: var(--color-dark);
+  color: var(--color-light);
+  cursor: default;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 10px;
+}
+
+a {
+  color: #6495ed;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 0 0 5px;
+}
