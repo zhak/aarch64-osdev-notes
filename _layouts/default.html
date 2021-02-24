@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>
+    {% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <div style="display: flex; flex-direction: row;">
+      <div style="display: flex; flex-direction: column; line-height: 1;">
+        <span style="font-size: 1.15em;">
+          ROCK Pi S
+        </span>
+        <span style="color: #808080; text-align: right;">
+          bare metal
+        </span>
+      </div>
+      <a style="color: goldenrod; font-size: 2.25em; line-height: 1; margin-left: 6px" href="{{ '/' | relative_url }}">
+        notes
+      </a>
+    </div>
+    <div>
+      <a class="nav-link" href="{{ '/contents.html' | relative_url }}">contents</a>
+    </div>
+  </header>
+  <article>
+    {{ content }}
+  </article>
+</body>
+</html>
