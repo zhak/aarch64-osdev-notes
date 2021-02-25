@@ -128,4 +128,4 @@ What happens next is:
 - `ddr.bin` performs its memory and UART initialization routines and returns control back to BootROM,
 - BootROM unpacks and runs the target application in external memory.
 
-The target application starts executing at address `0x00000000`, having UART conveniently pre-configured for serial communication.
+The target application starts executing in EL3 at address `0x00000000`, having UART conveniently pre-configured for serial communication.
