@@ -127,9 +127,6 @@ pre.highlight {
 }
 
 div.language-python {
-  border-color: var(--color-dark);
-  border-style: dashed;
-  border-width: 1px;
   display: block;
   text-align: center;
 }
@@ -149,5 +146,17 @@ div.language-fasmarm {
 
 div.language-fasmarm > div:before {
   content: "[ Assembler ]";
+  font-size: 0.9em;
+}
+
+div.language-bash {
+  background: black;
+  color: #c0c0c0;
+  display: block;
+  text-align: center;
+}
+
+div.language-bash > div:before {
+  content: "[ Bash ]";
   font-size: 0.9em;
 }

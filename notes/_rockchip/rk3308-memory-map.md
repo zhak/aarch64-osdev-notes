@@ -4,7 +4,7 @@ layout: note
 updated: "2021-02-25"
 ---
 
-As appears in the Rockchip [RK3308 Technical Reference Manual Part I, rev 1.1]({{ '/pdf/RK3308-TRM-1.pdf' | relative_url }}){:target="_blank"}
+As appears in the [Rockchip RK3308 Technical Reference Manual Part I, rev 1.1]({{ '/pdf/RK3308-TRM-1.pdf' | relative_url }}){:target="_blank"}
 
 | Base Address  | Size     | Description                  |
 |--------------:|:---------|:-----------------------------|

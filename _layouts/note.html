@@ -5,7 +5,7 @@ layout: default
 <header>
 {% for collection in site.collections %}
   {% if collection.label == page.collection %}
-    <h1>{{ collection.title }} {{ page.title }}</h1>
+    <h1><span style="font-size: 0.75em;">{{ collection.title }}</span><br>{{ page.title }}</h1>
   {% break %}
   {% endif %}
 {% endfor %}

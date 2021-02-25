@@ -1,10 +1,10 @@
 ---
-title: "Contents"
+title: "contents"
 layout: default
 ---
 
 <header>
-  <h1>Contents</h1>
+  <h1>contents</h1>
 </header>
 
 {% for collection in site.collections %}

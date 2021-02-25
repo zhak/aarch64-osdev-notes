@@ -1,5 +1,5 @@
 ---
-title: "Pinouts"
+title: "Pinout"
 layout: note
 updated: "2021-02-25"
 ---

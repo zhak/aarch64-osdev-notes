@@ -1,5 +1,5 @@
 ---
-title: "Boot Flow"
+title: "Boot flow"
 layout: note
 updated: "2021-02-25"
 ---
@@ -39,6 +39,8 @@ These modules run in sequence and perform the following actions:
 - `miniloader` loads TF-A executable and target application into DRAM;
 - `miniloader` gives control to TF-A in secure state (EL3);
 - TF-A performs its part of initialization, then transfers control to the target application in non-secure state (EL2).
+
+Pre-compiled Rockchip Loader binaries can be found on [GitHub](https://github.com/radxa/rkbin){:target="_blank"}.
 
 ### U-Boot
 
