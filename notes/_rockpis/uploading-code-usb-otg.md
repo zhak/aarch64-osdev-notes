@@ -116,11 +116,16 @@ with open(sys.argv[3], 'wb') as f:
     f.write(out)
 ```
 
-### Example
+Having the target application `app.bin` already compiled, prepare the image and upload it to the device:
 
 ```bash
-$ python3 rkpack.py rk3308_ddr_589MHz_uart0_m0_v1.26.bin test-app.bin out.bin
+$ python3 rkpack.py rk3308_ddr_589MHz_uart0_m0_v1.26.bin app.bin out.bin
 $ rkdeveloptool db out.bin
 ```
 
-Target application starts executing in SDRAM at address `0x00000000`, having UART conveniently pre-configured for serial communication.
+What happens next is:
+- BootROM unpacks the first file in the image (`ddr.bin` in this case) into internal on-chip SRAM and executes it,
+- `ddr.bin` performs its memory and UART initialization routines and returns control back to BootROM,
+- BootROM unpacks and runs the target application in external memory.
+
+The target application starts executing at address `0x00000000`, having UART conveniently pre-configured for serial communication.
