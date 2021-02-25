@@ -122,3 +122,5 @@ with open(sys.argv[3], 'wb') as f:
 $ python3 rkpack.py rk3308_ddr_589MHz_uart0_m0_v1.26.bin test-app.bin out.bin
 $ rkdeveloptool db out.bin
 ```
+
+Target application starts executing in SDRAM at address `0x00000000`, having UART conveniently pre-configured for serial communication.
