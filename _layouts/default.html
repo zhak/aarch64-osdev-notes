@@ -6,12 +6,12 @@
       {% if page.collection %}
         {% for collection in site.collections %}
           {% if collection.label == page.collection %}
-            {{ collection.title }}
+            {{ collection.title | downcase }}
           {% break %}
           {% endif %}
         {% endfor %}
       {% endif %}
-      {{ page.title }} -
+      {{ page.title | downcase }} -
     {% endif %}{{ site.title }}
   </title>
   <meta charset="utf-8">

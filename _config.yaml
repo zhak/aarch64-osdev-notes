@@ -4,6 +4,9 @@ updated: "2021-02-25"
 
 collections_dir: notes
 collections:
+  arch:
+    title: "AArch64"
+    output: true
   rockchip:
     title: "Rockchip"
     output: true
