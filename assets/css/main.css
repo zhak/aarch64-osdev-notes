@@ -33,9 +33,8 @@ body > header {
   color: var(--color-light);
   cursor: default;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 40px 10px;
+  flex-direction: column;
+  padding: 0px 10px 20px 10px;
 }
 
 article {
