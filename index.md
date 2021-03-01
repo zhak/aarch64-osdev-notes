@@ -8,7 +8,7 @@ In these notes, I aggregate my knowledge about bare-metal programming in assembl
 
 I do system programming as a hobby and write notes mostly for myself to better arrange in mind what I learn and be able to brush up on it when forgotten.
 
-Yet, I'll be happy if you also find here something useful for yourselves.
+Yet, I'll be happy if you find here something useful for yourselves.
 
 %author%
 

@@ -17,7 +17,8 @@ While searching for SPL, BootROM code probes external devices for ID Block, a 51
 Boot devices are probed for ID Block in order:<br>
 NAND Flash > eMMC > SPI NOR Flash > SPI NAND Flash > SDMMC.
 
-**_ROCK Pi S supports booting from microSD card or on-board SD NAND flash memory_** (if present). If boot code is not ready in these devices, USB OTG is initialized to allow boot code upload.
+**_ROCK Pi S supports booting from microSD card or on-board SD NAND flash memory_** (if present) in the following order:
+**SD NAND (connected to eMMC) > microSD (connected to SDMMC)**. If boot code is not ready in these devices, USB OTG is initialized to allow boot code upload.
 
 ## Stage 2 -- Secondary Program Loader
 
