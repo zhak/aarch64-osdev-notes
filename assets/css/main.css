@@ -158,6 +158,11 @@ pre.highlight {
   text-align: left;
 }
 
+pre.scheme {
+  font-size: 0.75em;
+  line-height: 1.2;
+}
+
 div.language-python {
   display: block;
   text-align: center;
@@ -177,7 +182,7 @@ div.language-fasmarm {
 }
 
 div.language-fasmarm > div:before {
-  content: "[ Assembler ]";
+  content: "[ flat assembler for ARM (fasmarm) ]";
   font-size: 0.9em;
 }
 
