@@ -174,15 +174,12 @@ div.language-python > div:before {
 }
 
 div.language-fasmarm {
-  border-color: var(--color-dark);
-  border-style: dashed;
-  border-width: 1px;
   display: block;
   text-align: center;
 }
 
 div.language-fasmarm > div:before {
-  content: "[ flat assembler for ARM (fasmarm) ]";
+  content: "[ flat assembler for ARM ]";
   font-size: 0.9em;
 }
 

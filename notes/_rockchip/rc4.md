@@ -25,11 +25,8 @@ def rc4(data):
         C.append(b ^ S[(S[i] + S[j]) % 256])
     return bytearray(C)
 ```
-
-Macroinstruction for flat assembler:
-
-<div class="language-fasmarm"><div class="highlight"><pre class="highlight">
-<code>
+<br>
+<div class="language-fasmarm"><div class="highlight"><pre class="highlight"><code>
 macro rc4 start, count {
     local K, S, i, j, Si, Sj, Ki, x, y
 
@@ -69,5 +66,4 @@ macro rc4 start, count {
         store byte (x xor y) at start + %-1
     end repeat
 }
-</code>
-</pre></div></div>
+</code></pre></div></div>
